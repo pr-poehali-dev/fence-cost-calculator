@@ -7,6 +7,7 @@ export default {
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
 		"./src/**/*.{ts,tsx}",
+			"./1780300817947172433.html"
 	],
 	prefix: "",
 	theme: {
@@ -24,6 +25,12 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				orange: 'hsl(var(--orange))',
+				graphite: {
+					DEFAULT: 'hsl(var(--graphite))',
+					light: 'hsl(var(--graphite-light))',
+					dark: 'hsl(var(--graphite-dark))',
+				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
