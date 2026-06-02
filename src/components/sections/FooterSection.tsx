@@ -10,14 +10,12 @@ export default function FooterSection({ onNavigate }: FooterProps) {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
           <div className="md:col-span-2">
-            <div className="flex items-center gap-3 mb-4 cursor-pointer" onClick={() => onNavigate("home")}>
-              <div className="w-9 h-9 bg-orange rounded flex items-center justify-center">
-                <Icon name="Layers" size={20} className="text-white" />
-              </div>
-              <div>
-                <div className="text-white font-bold text-base">МеталлСтрой</div>
-                <div className="text-orange text-xs">Производство металлоконструкций</div>
-              </div>
+            <div className="flex items-center gap-2 mb-4 cursor-pointer" onClick={() => onNavigate("home")}>
+              <img
+                src="https://cdn.poehali.dev/projects/732face8-46cb-40af-8852-d60c125a1f83/bucket/90436faf-b820-49ac-b613-84698e0cb0a1.png"
+                alt="ЗМП"
+                className="h-10 w-auto object-contain"
+              />
             </div>
             <p className="text-white/40 text-sm leading-relaxed max-w-xs">
               Более 20 лет производим высококачественные металлоконструкции.
@@ -67,7 +65,7 @@ export default function FooterSection({ onNavigate }: FooterProps) {
 
         <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="text-white/25 text-sm">
-            © 2024 МеталлСтрой. Все права защищены.
+            © 2024 ООО «ЗМП». Все права защищены.
           </div>
           <div className="text-white/25 text-sm">
             Производство металлоконструкций с 2005 года

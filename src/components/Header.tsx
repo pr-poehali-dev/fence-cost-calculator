@@ -26,14 +26,13 @@ export default function Header({ activeSection, onNavigate }: HeaderProps) {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-graphite-dark/95 backdrop-blur-sm border-b border-white/10">
       <div className="container mx-auto px-4 flex items-center justify-between h-16">
-        <div className="flex items-center gap-3 cursor-pointer" onClick={() => handleNav("home")}>
-          <div className="w-9 h-9 bg-orange rounded flex items-center justify-center">
-            <Icon name="Layers" size={20} className="text-white" />
-          </div>
-          <div>
-            <div className="text-white font-bold text-base leading-tight">МеталлСтрой</div>
-            <div className="text-orange text-xs leading-tight">Производство металлоконструкций</div>
-          </div>
+        <div className="flex items-center gap-2 cursor-pointer" onClick={() => handleNav("home")}>
+          <img
+            src="https://cdn.poehali.dev/projects/732face8-46cb-40af-8852-d60c125a1f83/bucket/90436faf-b820-49ac-b613-84698e0cb0a1.png"
+            alt="ЗМП"
+            className="h-10 w-auto object-contain"
+          />
+          <div className="text-orange text-xs leading-tight hidden sm:block">Производство металлоконструкций</div>
         </div>
 
         <nav className="hidden md:flex items-center gap-1">
