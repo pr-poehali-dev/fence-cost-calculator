@@ -364,7 +364,7 @@ function OrderModal({ data, onClose, onSuccess }: OrderModalProps) {
     e.preventDefault();
     setLoading(true);
     try {
-      const func2url = await import("../../func2url.json");
+      const func2url = await import("../../../backend/func2url.json");
       const url = (func2url as Record<string, string>)["send-order"];
       await fetch(url, {
         method: "POST",
